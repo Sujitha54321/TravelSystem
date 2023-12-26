@@ -1,0 +1,100 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="main-content">
+    <a class="navbar-brand">Travel Booking</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/admin/home">Admin</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="admin/bus-list">Bus</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./admintrain-list">Train</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/flight-list">Flight</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/carnew">Car</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+
+  <div class="row">
+  <div class="col-12">
+      <div class="card">
+          <div class="card-body text-center">
+              <h5 class="card-title m-b-0">Booking List</h5>
+          </div>
+              <div class="table-responsive">
+                  <table class="table">
+                      <thead class="thead-light">
+        <tr>
+          <th>Bookingid</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <!-- <th>UserName</th>
+          <th>PhoneNumber</th>
+          <th>totalPrice</th> -->
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tempbooking of Booking | paginate: { itemsPerPage: count, currentPage: p}">
+          <td>{{ tempbooking.booking_id }}</td>
+          <td>{{ tempbooking.date }}</td>
+          <td>{{ tempbooking.status }}</td>
+          <td>{{ tempbooking. source}}</td>
+          <td>{{tempbooking.destination}}</td>
+          <td>{{ tempbooking.departure }}</td>
+          <td>{{ tempbooking.arrival }}</td>
+          <!-- <td>{{ tempbooking.bus.busNumber }}</td> -->
+
+          <!-- <td>{{tempbooking.bus.busId}}</td> -->
+          <!-- <td>{{ tempbooking.user.first_name }} {{ tempbooking.user.last_name }}</td>
+          <td>{{ tempbooking.user.phoneNumber }}</td> -->
+          <!-- <td>{{ tempbooking.train?.trainName }}</td> -->
+          <!-- <td>{{ tempbooking.flight?.flightNumber }}</td> -->
+          <!-- <td>{{ tempbooking.totalPrice }}</td> -->
+
+
+
+          </tr>
+          </tbody>
+
+    </table>
+    <div class="text-right mt-3">
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+  </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Welcome {{ user.first_name.toUpperCase() }} {{ user.last_name.toUpperCase() }} !!</a>
+    <nav class="nav-items">
+      <a href="/user/userHome">Home</a>
+      <a href="#">About</a>
+      <a href="user/login" (click)="logout()">LogOut</a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="custom-container">
+      <h2>Bus List</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Bus Number</th>
+            <th>Bus Name</th>
+            <th>Capacity</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Ticket Amount</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tempbus of bus">
+            <td>{{ tempbus.busId }}</td>
+            <td>{{ tempbus.busNumber }}</td>
+            <td>{{ tempbus.busName }}</td>
+            <td>{{ tempbus.capacity }}</td>
+            <td>{{ tempbus.departure }}</td>
+            <td>{{ tempbus.arrival }}</td>
+            <td>{{ tempbus.source }}</td>
+            <td>{{ tempbus.destination }}</td>
+            <td>{{ tempbus.ticket_amount }}</td>
+            <td>
+              <button (click)="navigateToBookBus(tempbus.busId)">Book</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

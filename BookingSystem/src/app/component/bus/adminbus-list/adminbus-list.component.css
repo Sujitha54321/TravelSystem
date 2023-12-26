@@ -1,0 +1,101 @@
+/* .sub-container {
+  margin: 2%;
+}
+.createBusButton {
+  float: right;
+  margin-top: 7px;
+}
+.customCardHeader {
+  background-color: #5161ce;
+  color: #fff;
+  font-weight: 600;
+  font-size: x-large;
+} */
+.sub-container {
+  margin: 2%;
+}
+
+.createBusButton {
+  float: right;
+  margin-top: 7px;
+}
+
+.customCardHeader {
+  background-color: #5161ce;
+  color: #fff;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.card {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+  border: 1px solid #218838;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+  border: 1px solid #d39e00;
+}
+
+.btn-warning:hover {
+  background-color: #d39e00;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border: 1px solid #c82333;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Customize the styles as needed */

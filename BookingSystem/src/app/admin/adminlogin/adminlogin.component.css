@@ -1,0 +1,127 @@
+/* Import the Font Awesome stylesheet */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+/* Style for the background and overall section */
+/* .ftco-section {
+  background-image: url('/src/assets/images/adome.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+} */
+
+/* Style for the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Style for the screen */
+.screen {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-left: 200px;
+}
+
+/* Style for the screen content */
+.screen__content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-left: 100px;
+}
+
+/* Style for the login form */
+.login {
+  text-align: center;
+}
+
+/* Style for login fields */
+.login__field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Style for login icons */
+.login__icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+/* Style for login input fields */
+.login__input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Style for the login button */
+.button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Style for the bottom links or text */
+.bottom {
+  color: black;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Style for the screen background shapes */
+.screen__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.screen__background__shape {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+.screen__background__shape1 {
+  top: 20%;
+  left: 15%;
+}
+
+.screen__background__shape2 {
+  top: 40%;
+  left: 45%;
+}
+
+.screen__background__shape3 {
+  top: 60%;
+  left: 75%;
+}
+
+.screen__background__shape4 {
+  top: 80%;
+  left: 30%;
+}
+
+/* Add more styles as needed for other elements */

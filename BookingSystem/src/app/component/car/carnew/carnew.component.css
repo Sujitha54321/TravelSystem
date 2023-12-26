@@ -1,0 +1,269 @@
+/* @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+    background-color: #673AB7;
+    font-family: 'Calibri', sans-serif !important
+}
+
+.container{
+   margin-top:100px;
+}
+.card {
+      position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: #fff;
+   background-clip: border-box;
+   border: 0px solid transparent;
+   border-radius: 0px;
+}
+
+
+.card-body {
+   -webkit-box-flex: 1;
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto;
+   padding: 1.25rem;
+}
+
+.card .card-title {
+   position: relative;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+
+.table {
+   width: 100%;
+   max-width: 100%;
+   margin-bottom: 1rem;
+   background-color: transparent;
+}
+
+* {
+   outline: none;
+}
+
+.table th, .table thead th {
+   font-weight: 500;
+}
+
+
+.table thead th {
+   vertical-align: bottom;
+   border-bottom: 2px solid #dee2e6;
+}
+
+
+.table th {
+   padding: 1rem;
+   vertical-align: top;
+   border-top: 1px solid #dee2e6;
+}
+
+
+.table th, .table thead th {
+   font-weight: 500;
+}
+
+
+th {
+   text-align: inherit;
+}
+
+
+.m-b-20 {
+   margin-bottom: 20px;
+}
+
+
+.customcheckbox {
+   display: block;
+   position: relative;
+   padding-left: 24px;
+   font-weight: 100;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 22px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+
+.customcheckbox input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.checkmark {
+   position: absolute;
+   top: -3px;
+   left: 0;
+   height: 20px;
+   width: 20px;
+   background-color: #CDCDCD;
+   border-radius: 6px;
+}
+
+
+.customcheckbox input:checked ~ .checkmark {
+   background-color: #2196BB;
+}
+
+
+.customcheckbox .checkmark:after {
+   left: 8px;
+   top: 4px;
+   width: 5px;
+   height: 10px;
+   border: solid white;
+   border-width: 0 3px 3px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+
+  padding: 15px 30px;
+}
+
+.header .logo {
+  font-size: 25px;
+
+  color: #ecf0f1;
+
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2c3e50;
+
+  margin-right: 2px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #ecf0f1;
+
+  padding: 15px 20px;
+
+} */
+/* trainlist.component.css */
+.main-content {
+  padding: 300px;
+  background-color: #92caef;
+  background-image: url('/assets/images/car.jpg'); /* Change the path and image for trains */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 15px 30px;
+}
+
+.header .logo {
+  font-size: 25px;
+  color: #ffff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2c3e50;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #3498db; /* Adjust the background color for trains */
+}
+
+.custom-container {
+  /* background-color: #3498db; */
+  padding: 20px; /* Add padding to the container */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff; /* Set background color for the table */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+button {
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Style for the h2 element in the main content */
+.main-content h2 {
+  background-color: #2c3e50; /* Choose your desired background color */
+  color: #fff; /* Set text color for better visibility */
+  padding: 10px; /* Adjust padding for better styling */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  text-align: center; /* Center the text within the h2 element */
+}

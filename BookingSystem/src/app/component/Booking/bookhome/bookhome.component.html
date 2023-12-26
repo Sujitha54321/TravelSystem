@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique HTML HomePage</title>
+  <link rel="stylesheet" href="bookhome.component.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Let's Travel around the world</a>
+    <nav class="nav-items">
+      <a href="/userHome">Home</a>
+      <a href="/helpchat">Help Desk</a>
+      <a href="/myprofile">My Profile</a>
+      <a href="user/login" (click)="logout()">LogOut</a>
+    </nav>
+  </header>
+
+  <!-- <section class="intro">
+    <h1>Welcome to Our Unique Website</h1>
+    <p>Explore the world with us and make unforgettable memories.</p>
+  </section> -->
+
+  <section class="achievements">
+    <div class="work">
+      <i class="fas fa-bus"></i>
+      <div class="work-heading">Bus Booking</div>
+      <div class="work-text">Book Your Bus Seat!</div>
+      <button type="button" class="read_more_btn" [routerLink]="['/bus-list']">Book Bus</button>
+    </div>
+
+    <div class="work">
+      <i class="fas fa-train"></i>
+      <div class="work-heading">Train Booking</div>
+      <div class="work-text">Book Your Train Seat!</div>
+      <button type="button" class="read_more_btn" [routerLink]="['/trainlist']">Book Train</button>
+    </div>
+
+    <div class="work">
+      <i class="fas fa-plane"></i>
+      <div class="work-heading">Flight Booking</div>
+      <div class="work-text">Book Your Flight Seat!</div>
+      <button type="button" class="read_more_btn" [routerLink]="['/flight-list']">Book Flight</button>
+    </div>
+    <div class="work">
+      <i class="fas fa-car"></i>
+      <div class="work-heading">Car Booking</div>
+      <div class="work-text">Book Your Car Seat!</div>
+      <button type="button" class="read_more_btn" [routerLink]="['/car-list']">Book Car</button>
+    </div>
+  </section>
+
+  <!-- <section class="about-me">
+    <img src="https://example.com/your-image.jpg" alt="About Me Image">
+    <div class="about-me-text">
+      <h2>Discover My Story</h2>
+      <p>Learn more about my journey and experiences. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </section> -->
+
+  <!-- <footer class="footer">
+    <div class="copy">© 2023 Unique Travels</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>Explore</span>
+        <a href="#">Destinations</a>
+        <a href="#">Packages</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="links">
+        <span>Contact</span>
+        <a href="#">Customer Support</a>
+        <a href="#">Email Us</a>
+        <a href="#">FAQs</a>
+      </div>
+    </div>
+  </footer> -->
+</body>
+
+</html>

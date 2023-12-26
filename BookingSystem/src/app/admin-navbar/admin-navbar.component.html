@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+  <a class="navbar-brand navbar-logo" href="#">All in one Travel Booking</a>
+  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <i class="fas fa-bars text-white"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+          <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+          <li class="nav-item">
+              <a class="nav-link" href="admin/home"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/admin/bus-create"><i class="far fa-clone"></i>Bus</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/train-create"><i class="far fa-calendar-alt"></i>Train</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/flight-create"><i class="far fa-chart-bar"></i>Flight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/car-create"><i class="far fa-chart-bar"></i>Car</a>
+        </li>
+          <li> <div class="nav-option option6"><a routerLink="/admin/login">
+            <img src="assets/images/logout.png" class="nav-img" alt="logout">
+            <h6 style="margin-right: 10px;font-family: 'Courier New', Courier, monospace;" (click)="logout()">Logout</h6>
+          </a></div></li>
+      </ul>
+  </div>
+</nav>
